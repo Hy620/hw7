@@ -72,6 +72,17 @@ function draw(){
       ctx.strokStyle = "black"
       ctx.stroke() 
 
+        ctx.beginPath()
+        ctx.moveTo(350,350)
+        ctx.lineTo(350,185-mouse.y/3)
+        ctx.lineTo(380,200 - (time%5)-mouse.y/3)
+        ctx.lineTo(350,210-mouse.y/3)
+      ctx.closePath()
+      ctx.fillStyle="#D3222F"
+      ctx.fill()
+      ctx.strokStyle = "black"
+      ctx.stroke()
+
     
   
   //拱門繪製
@@ -177,6 +188,18 @@ function draw(){
       ctx.stroke()
   
       ctx.beginPath()
+
+//旗子2
+  
+          ctx.moveTo(50,350)
+        ctx.lineTo(50,190-mouse.y/5)
+        ctx.lineTo(85,205 - (time%3)-mouse.y/5)
+        ctx.lineTo(50,220-mouse.y/5)
+      ctx.closePath()
+      ctx.fillStyle="#D3222F"
+      ctx.fill()
+      ctx.strokStyle = "black"
+      ctx.stroke()  
   
    //拱門門柱
       ctx.fillStyle ="#8f969c"
